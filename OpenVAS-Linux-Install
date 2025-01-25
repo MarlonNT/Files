@@ -1,0 +1,17 @@
+# Update the package list to get information about the latest versions of packages and dependencies
+sudo apt update
+
+# Upgrade all installed packages to their latest versions (non-essential packages remain untouched)
+sudo apt upgrade -y
+
+# Upgrade all packages, including handling package removals and dependencies for a complete system update
+sudo apt dist-upgrade -y
+
+# Install the OpenVAS vulnerability scanner package
+sudo apt install openvas
+
+# Initialize and configure the Greenbone Vulnerability Management (GVM) environment
+sudo gvm-setup
+
+# Check the setup status of GVM to ensure it’s configured correctly
+sudo gvm-check-setup
